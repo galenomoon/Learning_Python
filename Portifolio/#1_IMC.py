@@ -24,7 +24,7 @@ while calcule_again == True:
   hight = input("Digite sua altura (m): ")
   imc = get_imc(weight, hight)
   print(f"Seu IMC é: {imc: ,.2f}")
-  print(f"Classificação: {get_classification(imc)}")
+  print(f"Classificação: {get_classification(float(imc))}")
   
   calcule_again = input("Deseja calcular novamente? (S/N): ")
   if calcule_again.upper() == "N":
